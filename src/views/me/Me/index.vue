@@ -64,6 +64,7 @@
             <v-btn class="mr-2" depressed small color="success" target="_blank" href="https://mall.pixivic.net/product/">支付宝购买</v-btn>
             <v-btn depressed small color="success" target="_blank" href="https://weidian.com/?userid=1676062924">微信购买</v-btn>
           </div>
+          <span>需要微信付款请下载微店app或在微信打开https://weidian.com/?userid=1676062924</span>
         </v-card-text>
         <v-card-text class="text-center">
           <v-text-field v-model="code" label="输入兑换码（日期可以叠加）" />
