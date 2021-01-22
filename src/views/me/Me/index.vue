@@ -46,32 +46,7 @@
         </v-list-item-icon>
       </v-list-item>
     </v-list>
-    <v-dialog
-        v-model="dialog"
-        max-width="290"
-    >
-      <v-card>
-        <v-card-title class="headline">
-          会员图片加速
-        </v-card-title>
-        <v-card-text class="text-center">
-          <span v-if="isVip">{{ '当前会员加速中 有效期到' }}{{ user.permissionLevelExpireDate | dateFormat }}</span>
-          <span v-else>您当前还不是会员</span>
-        </v-card-text>
-        <v-card-text class="text-center">
-          <v-btn class="ma-2" depressed small color="primary" href="/handbook">使用说明</v-btn>
-          <div class="d-flex justify-center">
-            <v-btn class="mr-2" depressed small color="success" target="_blank" href="https://mall.pixivic.net/product/">支付宝购买</v-btn>
-            <v-btn depressed small color="success" target="_blank" href="https://weidian.com/?userid=1676062924">微信购买</v-btn>
-          </div>
-          <span>需要微信付款请下载微店app或在微信打开https://weidian.com/?userid=1676062924</span>
-        </v-card-text>
-        <v-card-text class="text-center">
-          <v-text-field v-model="code" label="输入兑换码（日期可以叠加）" />
-          <v-btn depressed color="success" :disabled="!code" @click="exchange">立即兑换</v-btn>
-        </v-card-text>
-      </v-card>
-    </v-dialog>
+
   </div>
 </template>
 
