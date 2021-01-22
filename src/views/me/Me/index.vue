@@ -61,7 +61,7 @@ export default {
   data() {
     return {
       list: [
-        { icon: '#picA34', text: '会员加速', val: 'vip' },
+
         { icon: '#pictianjia1', text: '我的画集', val: '/collects' },
         { icon: '#picshoucang-copy-copy-copy', text: '我的收藏', val: '/collect' },
         { icon: '#picicon-copy', text: '我的关注', val: '/artistCollect' },
