@@ -221,10 +221,10 @@ export default {
       illustDetail: null,
       page: 1,
       preview: false,
-      items: [
+     /* items: [
         { val: 'pixiv', title: '跳转pixiv详情' },
         { val: 'artist', title: '跳转pixiv画师' }
-      ],
+      ],*/
       like: false,
       commentList: [],
       likeUsers: [],
