@@ -26,7 +26,7 @@ function getSearch(params) {
 // 获取该搜索词相关联的tag
 function getTags(param) {
   return axios({
-    url: `/keywords/${format(param)}/pixivSuggestions`,
+    url: `/keywords/${format(param)}`,
     method: 'get'
   });
 }
