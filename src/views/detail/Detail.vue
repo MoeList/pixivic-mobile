@@ -54,7 +54,7 @@
           </div>
           <div class="detail-info">
             <div class="info-top">
-              <h3 class="text-no-wrap text-truncate">{{ illustDetail.title }}</h3>
+              <h3 class="text-no-wrap text-truncate"></h3>
               <p>ID:  {{ illustDetail.id }}</p>
               <v-btn class="collects" outlined small fab color="rgb(212, 35, 122)" @click="addCollects">
                 <svg font-size="30" class="icon" aria-hidden="true">
@@ -62,7 +62,7 @@
                 </svg>
               </v-btn>
             </div>
-            <p class="caption" v-html="illustDetail.caption" />
+            <p class="caption" v-html="" />
             <div class="tags">
               <span
                 v-for="(item, index) in illustDetail.tags"
@@ -70,8 +70,8 @@
                 class="caption tag"
                 @click="searchByTag(item.name)"
               >
-                <a>{{ item.name }}</a>
-                <a>{{ item.translatedName }}</a>
+                <a></a>
+                <a></a>
               </span>
             </div>
             <div class="work-stats">
@@ -79,13 +79,13 @@
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#picyanjing" />
                 </svg>
-                <span>{{ illustDetail.totalView }}</span>
+                <span>0</span>
               </a>
               <a class="work-stats-a">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#picaixin" />
                 </svg>
-                <span>{{ illustDetail.totalBookmarks }}</span>
+                <span>0</span>
               </a>
               <a class="work-stats-a">
                 <span>{{ illustDetail.createDate }}</span>
